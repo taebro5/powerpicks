@@ -11,16 +11,16 @@
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <title>Document</title>
   <style>
- * {
+    * {
       margin: 0px;
       padding: 0px;
-      scroll-behavior:smooth;
+      scroll-behavior: smooth;
     }
 
     html,
     body {
       width: 100%;
-      scroll-behavior:smooth;
+      scroll-behavior: smooth;
     }
 
     .bx-next,
@@ -65,18 +65,21 @@
       color: #27aabb !important;
       text-decoration: none;
     }
-    a:-webkit-any-link{
-      text-decoration: none ;
-      color:black;
+
+    a:-webkit-any-link {
+      text-decoration: none;
+      color: black;
     }
-    a:hover{
+
+    a:hover {
       color: #27aabb !important;
     }
-    
-.bx-wrapper{
-       border:none;
-margin-bottom:0px;
-}
+
+    .bx-wrapper {
+      border: none;
+      margin-bottom: 0px;
+    }
+
     .menu_a:hover {
       cursor: pointer;
     }
@@ -104,11 +107,15 @@ margin-bottom:0px;
 
     .img-form {
       text-align: center;
-width:100%
+      width: 100%
     }
 
     .img-1 {
-      max-width: 130%;
+      max-width: 100%;
+    }
+
+    .img {
+      width: 100%;
     }
 
     .footer-text {
@@ -118,12 +125,12 @@ width:100%
       margin-bottom: 5px;
     }
 
-    .blank{
+    .blank {
       width: 100%;
       height: 50px;
     }
 
-    .com-title{
+    .com-title {
       width: 100%;
       font-size: 25px;
       text-align: center;
@@ -131,186 +138,204 @@ width:100%
       padding: 20px 0 10px 0;
     }
 
-    .post{
+    .post {
       width: 100%;
       max-width: 1100px;
       display: inline-block;
       box-sizing: border-box;
-      border-bottom:1px solid rgba(33,33,33,0.1);
+      border-bottom: 1px solid rgba(33, 33, 33, 0.1);
       text-align: left;
       cursor: pointer;
     }
 
-    .com-center{
+    .com-center {
       width: 100%;
       text-align: center;
       padding-bottom: 50px;
     }
 
-    .c-title{
+    .c-title {
       width: calc(100% - 200px);
       display: inline-block;
       text-align: left;
       padding: 15px 0 15px 30px;
-      color:#212121;
+      color: #212121;
       background-image: url('./lock.png');
       background-repeat: no-repeat;
       background-size: 20px 20px;
       background-position: center left;
     }
-    .c-date{
+
+    .c-date {
       padding: 15px 0;
       font-size: 12px;
-      color:rgba(33,33,33,0.6);
+      color: rgba(33, 33, 33, 0.6);
       min-width: 61px;
       display: inline-block;
     }
-    .c-writer{
+
+    .c-writer {
       padding: 15px 0 15px 15px;
       font-size: 12px;
-      color:#212121;
+      color: #212121;
       min-width: 81px;
       display: inline-block;
     }
 
     @media screen and (min-width: 1000px) {
       .header {
-      width: 100%;
-      height: 101px;
-      padding: 0 84px;
-      display: flex;
-      justify-content: space-around;
-      box-sizing: border-box;
-      position: fixed;
-      background-color: white;
-      z-index: 10;
-    }
-    .two{
-      display: none;
-    }
-    
-      body {
+        width: 100%;
+        height: 101px;
+        padding: 0 84px;
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+        position: fixed;
+        background-color: white;
+        z-index: 10;
       }
+
+      .two {
+        display: none;
+      }
+
+      body {}
+
       .csForm {
-      background-color: #262626;
-      display: flex;
-      flex-wrap: wrap;
-      height: auto;
-      justify-content: center;
-      flex-direction: column;
-    }
-
-    .csForm>div {
-      width: 100%;
-      box-sizing: border-box;
-      color: white;
-      display: flex;
-
-    }
-
-    .cs1 {
-      width: 16.66666667%;
-    }
-
-    .cs2 {
-      width: 100%;
-      padding: 15px 15px 0px 15px;
-      display: flex;
-      flex-direction: column;
-      min-width: 236.250px;
-      text-align: center;
-      
-    }
-
-    .cs3 {
-      width: auto;
-      padding: 0 15px 0 15px;
-      min-width: 228.125px;
-      text-align: center;
-    }
-
-    .csFormTag {
-      width: 100%;
-      height: 100%;
-      min-width: 870px;
-    }
-
-    .input-tag {
-      border-color: rgba(255, 255, 255, 0.3);
-      color: #212121;
-      background: #ffffff;
-      margin-top: 5px;
-      height: 50px;
-      box-sizing: border-box;
-      font-size: 27px;
-      
-    }
-
-    .flex-div {
-      display: inline-block;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .flex-1 {
-      width: 300px;
-      height: 90px;
-      padding-top: 20px;
-      margin-right: 14px;
-      min-width: 140px;
-    }
-
-    .flex-2{
-      margin-bottom: 20px;
-    }
-
-    .input-name {
-      width: 250px;
-    }
-
-    .bar {
-      display: flex;
-    }
-
-    .input-c1,
-    .input-c2,
-    .input-c3 {
-      width: 100px;
-      box-sizing: border-box;
-    }
-
-    .input-c2,.input-c3{
-      width: 100px;
-    }
-
-    .submit-btn {
-      background-color: #1c1c1e;
-      border-color: #1c1c1e;
-      color: #ffffff;
-      border-width: 1px;
-      height: auto;
-      padding: 10px 20px;
-      margin-left: 20px;
-      font-size: 23px;
-    }
-      .name-t, .call-t{
-        margin-top: 5px; font-size: 27px;
-      }
-      .dash{
-        font-weight: bold; font-size: 27px; padding: 10px 5px;
-      }
-      .t1{
-        font-size:27px; margin-bottom:5px; min-width: 161.25px; color: rgb(255, 234, 0);  font-weight: bold;
-      }
-      .t2{
-        font-size: 20px;  min-width: 230.5px;
+        background-color: #262626;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        flex-direction: column;
       }
 
+      .csForm>div {
+        width: 100%;
+        box-sizing: border-box;
+        color: white;
+        display: flex;
+
+      }
+
+      .cs1 {
+        width: 16.66666667%;
+      }
+
+      .cs2 {
+        width: 100%;
+        padding: 15px 15px 0px 15px;
+        display: flex;
+        flex-direction: column;
+        min-width: 236.250px;
+        text-align: center;
+
+      }
+
+      .cs3 {
+        width: auto;
+        padding: 0 15px 0 15px;
+        min-width: 228.125px;
+        text-align: center;
+      }
+
+      .csFormTag {
+        width: 100%;
+        height: 100%;
+        min-width: 870px;
+      }
+
+      .input-tag {
+        border-color: rgba(255, 255, 255, 0.3);
+        color: #212121;
+        background: #ffffff;
+        margin-top: 5px;
+        height: 50px;
+        box-sizing: border-box;
+        font-size: 27px;
+
+      }
+
+      .flex-div {
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .flex-1 {
+        width: 300px;
+        height: 90px;
+        padding-top: 20px;
+        margin-right: 14px;
+        min-width: 140px;
+      }
+
+      .flex-2 {
+        margin-bottom: 20px;
+      }
+
+      .input-name {
+        width: 250px;
+      }
+
+      .bar {
+        display: flex;
+      }
+
+      .input-c1,
+      .input-c2,
+      .input-c3 {
+        width: 100px;
+        box-sizing: border-box;
+      }
+
+      .input-c2,
+      .input-c3 {
+        width: 100px;
+      }
+
+      .submit-btn {
+        background-color: #1c1c1e;
+        border-color: #1c1c1e;
+        color: #ffffff;
+        border-width: 1px;
+        height: auto;
+        padding: 10px 20px;
+        margin-left: 20px;
+        font-size: 23px;
+      }
+
+      .name-t,
+      .call-t {
+        margin-top: 5px;
+        font-size: 27px;
+      }
+
+      .dash {
+        font-weight: bold;
+        font-size: 27px;
+        padding: 10px 5px;
+      }
+
+      .t1 {
+        font-size: 27px;
+        margin-bottom: 5px;
+        min-width: 161.25px;
+        color: rgb(255, 234, 0);
+        font-weight: bold;
+      }
+
+      .t2 {
+        font-size: 20px;
+        min-width: 230.5px;
+      }
+
     }
-/* 1000보다 작을때 */
+
+    /* 1000보다 작을때 */
     @media screen and (max-width: 1000px) {
-      body {
-      }
+      body {}
+
       .header {
         width: 100%;
         height: 68px;
@@ -322,20 +347,23 @@ width:100%
         background-color: #212121;
         z-index: 10;
       }
-      .menu{
+
+      .menu {
         display: none;
       }
-      .logo{
-        
-      }
-      .one{
+
+      .logo {}
+
+      .one {
         display: none;
       }
-      .two{
+
+      .two {
         position: fixed;
         margin: auto;
         top: 15px;
       }
+
       .cs1 {
         width: 0px;
       }
@@ -437,21 +465,30 @@ width:100%
         padding: 10px 20px;
       }
 
-      .name-t, .call-t{
+      .name-t,
+      .call-t {
         margin-top: 5px;
         font-size: 17px;
       }
-      .t1{
-        margin-bottom:5px; min-width: 161.25px; color: rgb(255, 234, 0); font-size: 20px; font-weight: bold;
+
+      .t1 {
+        margin-bottom: 5px;
+        min-width: 161.25px;
+        color: rgb(255, 234, 0);
+        font-size: 20px;
+        font-weight: bold;
       }
-      .t2{
-        font-size: 14px; min-width: 230.5px;
+
+      .t2 {
+        font-size: 14px;
+        min-width: 230.5px;
       }
-      .dash{
+
+      .dash {
         padding: 10px 5px;
         font-size: 16px;
       }
-     
+
     }
   </style>
 </head>
@@ -486,35 +523,35 @@ width:100%
         <p class="t2">파워픽스 무료상담 및 스포츠 데이터</p>
       </div>
       <div class="cs3">
-        <form class="csFormTag" action="">
+        <div class="csFormTag">
           <div class="flex-div flex-1">
-            <span class="name-t">이름</span>
-            <input class="input-tag input-name" type="text" name="" id="">
+            <span class="name-t" >이름</span>
+            <input class="input-tag input-name" id="name-input" type="text" name="" id="">
           </div>
           <div class="flex-div flex-2">
             <span class="call-t">연락처</span>
             <div class="bar">
-              <input class="input-tag input-c1" type="text" name="" id="">
+              <input class="input-tag input-c1" id="c1-input" type="text" name="" id="">
               <span class="dash">-</span>
-              <input class="input-tag input-c2" type="text" name="" id="">
+              <input class="input-tag input-c2" id="c2-input" type="text" name="" id="">
               <span class="dash">-</span>
-              <input class="input-tag input-c3" type="text" name="" id="">
+              <input class="input-tag input-c3" id="c3-input" type="text" name="" id="">
             </div>
           </div>
           <div class="flex-div flex-2">
-            <input class="submit-btn" type="submit" value="무료신청하기">
+            <input id="btn" class="submit-btn" type="button" value="무료신청하기">
           </div>
-        </form>
+        </div>
 
       </div>
     </div>
     <!-- img 태그만 참고, css는 img-1 찾아가서 확인하시면 됩니다, 
     src복붙 후 src 수정하시고 width크기는 맞추시는거 추천드립니다. -->
     <div class="img-form">
-      <img class="img-1" src="1.png" alt="" id="img-1">
-<img class="img-2" src="2.png" alt="" id="img-2">
-<img class="img-3" src="3.png" alt="" id="img-3">
-<img class="img-4" src="4.png" alt="">
+      <img class="img-1 img" src="1.png" alt="" id="img-1">
+      <img class="img-2 img" src="2.png" alt="" id="img-2">
+      <img class="img-3 img" src="3.png" alt="" id="img-3">
+      <img class="img-4 img" src="4.png" alt="">
     </div>
     <div class="com-center" id="com-center">
       <div class="blank"></div>
@@ -527,7 +564,7 @@ width:100%
         <span class="c-writer">저작권 ****</span>
       </div>
       <div class="post" onclick="alert('로그인 하셔야 이용 하실 수 있습니다.');"">
-        <span class="c-title">승률 70%대 나오는데요. 문의드립니다.</span>
+        <span class=" c-title">승률 70%대 나오는데요. 문의드립니다.</span>
         <span class="c-date">2021-04-20</span>
         <span class="c-writer">디즈****</span>
       </div>
@@ -538,7 +575,7 @@ width:100%
         이용후기
       </p>
       <div class="post" onclick="alert('로그인 하셔야 이용 하실 수 있습니다.');"">
-        <span class="c-title">놀이터를 찾고 있습니다.</span>
+        <span class=" c-title">놀이터를 찾고 있습니다.</span>
         <span class="c-date">2021-04-20</span>
         <span class="c-writer">최영****</span>
       </div>
@@ -570,6 +607,38 @@ width:100%
           speed: 300,
         });
       });
+
+
+      var btn = document.querySelector('#btn');
+      btn.addEventListener('click', add);
+
+      function add() {
+        var nameVar = document.getElementById('name-input').value;
+        var c1 = document.getElementById('c1-input').value;
+        var c2 = document.getElementById('c2-input').value;
+        var c3 = document.getElementById('c3-input').value;
+        var phone = c1 + '-' + c2 + '-' + c3;
+        console.log(phone);
+        console.log(nameVar);
+        $.ajax({
+          type: "POST",
+          url: "https://script.google.com/macros/s/AKfycbxWKdcYKWqRK8z3qRsT5wtc5S0UWeBCYu6ESiSohU-qfPBlzKo/exec",
+          data: {
+            "name": nameVar,
+            "phone": phone
+          },
+          success: function (response) {
+            document.getElementById('name-input').innerText = '';
+            document.getElementById('c1-input').innerText = '';
+            document.getElementById('c2-input').innerText = '';
+            document.getElementById('c3-input').innerText = '';
+            alert('신청되셨습니다.');
+          },
+          error: function (request, status, error) {
+            alert('값이 잘못되었습니다.');
+          }
+        });
+      }
     </script>
 </body>
 
